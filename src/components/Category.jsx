@@ -11,7 +11,7 @@ import Outdoor from "../assets/images/outdoor.jpg";
 
 const collections = [
   {
-    name: "Toilet",
+    name: "Toilets",
     image: Toilet,
   },
   {
