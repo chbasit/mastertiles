@@ -44,12 +44,12 @@ const testimonials = [
 ];
 
 const Card = ({ item }) => (
-  <div className="h-[250px] rounded-lg border border-gray-200 bg-[#FCFBFA] p-6  flex flex-col">
+  <div className="h-[300px] border border-gray-200 bg-[#FCFBFA] p-6  flex flex-col">
     <div className="flex items-center gap-3 mb-4">
        
 
       <div>
-        <h4 className="font-medium text-gray-900">{item.name}</h4>
+        <h4 className="font-regular text-gray-900">{item.name}</h4>
         <p className="text-sm text-gray-800">{item.location}</p>
       </div>
     </div>
@@ -66,7 +66,7 @@ const Card = ({ item }) => (
       ))}
     </div>
 
-    <p className="text-gray-800 text-sm line-clamp-5">
+    <p className="text-gray-800 text-sm line-clamp-5 pt-8">
       {item.review}
     </p>
   </div>
@@ -74,12 +74,12 @@ const Card = ({ item }) => (
 
 export default function Testimonials() {
   return (
-    <section className="py-8 bg-[#EFECE8]">
+    <section className="pb-4 bg-[#EFECE8]">
       <div className="max-w-[1450px] mx-auto px-5">
         {/* Heading */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-10">
           <div className="flex justify-center items-center gap-3 mb-5">
-            <span className="text-2xl md:text-5xl font-medium">
+            <span className="text-2xl md:text-5xl font-regular">
               <span className="text-[#4285F4]">G</span>
               <span className="text-[#EA4335]">o</span>
               <span className="text-[#FBBC05]">o</span>
@@ -89,7 +89,7 @@ export default function Testimonials() {
             </span>
           </div>
 
-          <h2 className="text-xl md:text-4xl font-medium text-gray-900">
+          <h2 className="text-xl md:text-4xl font-regular text-gray-900">
             Rated 4.9 on Google
           </h2>
 
@@ -106,7 +106,7 @@ export default function Testimonials() {
               ))}
             </div>
 
-            <span className="font-medium text-gray-800">
+            <span className="font-regular text-gray-800">
               337 Reviews
             </span>
           </div>

@@ -3,7 +3,7 @@ import tilesVideo from "../assets/images/tiles.mp4";
 
 export default function TilesShowcase() {
   return (
-    <section className="py-24 bg-[#EFECE8]">
+    <section className="py-12 bg-[#EFECE8]">
       <div className="max-w-[1400px] mx-auto px-5 lg:px-8">
         {/* Heading */}
         <div className="text-center max-w-3xl mx-auto mb-14">
@@ -14,7 +14,7 @@ export default function TilesShowcase() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1, duration: 0.6 }}
-            className="text-4xl md:text-5xl font-medium  text-[#222]  "
+            className="text-4xl md:text-5xl font-regular  text-[#222]  "
           >
             Discover the Beauty of Premium Tiles
           </motion.h2>
@@ -38,7 +38,7 @@ export default function TilesShowcase() {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
-          className="overflow-hidden rounded-xl shadow-xl"
+          className="overflow-hidden "
         >
           <video
             className="w-full h-[300px] md:h-[500px] lg:h-[700px] object-cover"

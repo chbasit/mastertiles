@@ -1,6 +1,11 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import logo from "../assets/images/logo.jpg";
+import {
+  FaInstagram,
+  FaLinkedinIn,
+  FaFacebookF,
+} from "react-icons/fa";
 
 const navLinks = [
   { name: "Home", href: "#" },
@@ -8,6 +13,7 @@ const navLinks = [
   { name: "Sanitary", href: "#sanitary" },
   { name: "Kitchen", href: "#kitchen" },
   { name: "About", href: "#about" },
+   { name: "Contact Us", href: "#contact" },
 ];
 
 export default function Navbar() {
@@ -72,7 +78,7 @@ export default function Navbar() {
               <li key={link.name}>
                 <a
                   href={link.href}
-                  className={`font-medium transition duration-300 ${
+                  className={`font-regular transition duration-300 ${
                     scrolled
                       ? "text-[#36454F] hover:text-yellow-600"
                       : "text-white hover:text-yellow-400"
@@ -85,18 +91,34 @@ export default function Navbar() {
           </ul>
 
           {/* CTA */}
-          <div className="hidden lg:block">
-            <button
-              className={`px-6 py-2 rounded-full transition duration-300 border ${
-                scrolled
-                  ? "border-black text-[#36454F] hover:bg-black hover:text-white"
-                  : "border-white text-white hover:bg-white hover:text-[#36454F]"
-              }`}
-            >
-              Contact Us
-            </button>
-          </div>
+         {/* Social Icons */}
+<div className="hidden lg:flex items-center gap-3">
+  <a
+    href="https://www.facebook.com/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className={`w-10 h-10   flex items-center justify-center transition duration-300 ${
+      scrolled
+        ? "  text-[#36454F] hover:bg-[#36454F] hover:text-white"
+        : "  text-white hover:bg-white hover:text-[#36454F]"
+    }`}
+  >
+    <FaFacebookF size={16} />
+  </a>
 
+  <a
+    href="https://www.instagram.com/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className={`w-10 h-10  flex items-center justify-center transition duration-300 ${
+      scrolled
+        ? "  text-[#36454F] hover:bg-[#36454F] hover:text-white"
+        : "  text-white hover:bg-white hover:text-[#36454F]"
+    }`}
+  >
+    <FaInstagram size={17} />
+  </a>
+</div>
           {/* Mobile Menu Button */}
           <button
             onClick={() => setMenuOpen(!menuOpen)}
@@ -139,15 +161,33 @@ export default function Navbar() {
               ))}
             </ul>
 
-            <button
-              className={`mt-8 w-full py-3 rounded-full font-semibold transition ${
-                scrolled
-                  ? "bg-black text-white hover:bg-yellow-500 hover:text-[#36454F]"
-                  : "bg-[#FCFBFA]  text-[#36454F] hover:bg-yellow-400"
-              }`}
-            >
-              Contact Us
-            </button>
+           <div className="flex items-center justify-center gap-4 mt-8">
+  <a
+    href="https://www.facebook.com/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className={`w-11 h-11 rounded-full border flex items-center justify-center transition ${
+      scrolled
+        ? "border-gray-300 text-[#36454F] hover:bg-[#36454F] hover:text-white"
+        : "border-white text-white hover:bg-white hover:text-[#36454F]"
+    }`}
+  >
+    <FaFacebookF size={18} />
+  </a>
+
+  <a
+    href="https://www.instagram.com/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className={`w-11 h-11 rounded-full border flex items-center justify-center transition ${
+      scrolled
+        ? " text-[#36454F] hover:bg-[#36454F] hover:text-white"
+        : "  text-white hover:bg-white hover:text-[#36454F]"
+    }`}
+  >
+    <FaInstagram size={18} />
+  </a>
+</div>
           </div>
         </div>
       </nav>

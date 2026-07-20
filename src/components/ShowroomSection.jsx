@@ -46,7 +46,7 @@ const gallery = [
 
 export default function ShowroomSection() {
   return (
-    <section className="py-24 bg-[#EFECE8]">
+    <section className="py-8 bg-[#EFECE8]">
       <div className="max-w-[1450px] mx-auto px-5 lg:px-8">
 
         {/* Top Content */}
@@ -60,7 +60,7 @@ export default function ShowroomSection() {
             transition={{ duration: 0.7 }}
             className="lg:col-span-4"
           >
-            <h2 className="text-2xl lg:text-5xl font-medium   text-[#222]">
+            <h2 className="text-2xl lg:text-5xl font-regular   text-[#222]">
               No 1. Porcelain Tiles & Ceramics Tiles Company in Pakistan
             </h2>
           
@@ -95,7 +95,7 @@ export default function ShowroomSection() {
         </div>
 
        <div className="mt-24">
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
     {gallery.map((item, index) => (
       <motion.div
         key={index}
@@ -110,7 +110,7 @@ export default function ShowroomSection() {
             <img
               src={item.image}
               alt={item.name}
-              className="w-full h-[200px] object-cover transition duration-700 group-hover:scale-110"
+              className="w-full h-[250px] object-cover transition duration-700 group-hover:scale-110"
             />
 
             <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition duration-500" />

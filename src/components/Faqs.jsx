@@ -40,17 +40,17 @@ export default function FAQSection() {
 
   return (
     <section className=" bg-[#EFECE8] ">
-      <div className="max-w-[1450px] mx-auto px-5 lg:px-8 py-20">
+      <div className="max-w-[1450px] mx-auto px-5 lg:px-8 py-10">
          
         <div className="text-center mb-14">
           
-          <h2 className="text-2xl lg:text-5xl font-medium text-[#332820]">
+          <h2 className="text-2xl lg:text-5xl font-regular text-[#332820]">
             Everything You Need to Know
           </h2>
         </div>
 
         {/* FAQ Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
           {faqs.map((faq, index) => {
             const isOpen = open === index;
 
@@ -61,15 +61,14 @@ export default function FAQSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.08 }}
                 viewport={{ once: true }}
-                className="bg-[#FCFBFA] border border-gray-200"
               >
                 <button
                   onClick={() => setOpen(isOpen ? null : index)}
-                  className="w-full flex items-center justify-between p-6 text-left"
+                  className="w-full flex items-center justify-between p-4 text-left"
                 >
-                  <h3 className="text-sm lg:text-lg font-regular text-[#332820] pr-5">
+                  <p className="text-sm lg:text-lg font-regular text-[#332820] pr-5">
                     {faq.question}
-                  </h3>
+                  </p>
 
                   {isOpen ? (
                     <Minus className="flex-shrink-0 text-[#332820]" size={22} />

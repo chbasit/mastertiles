@@ -11,7 +11,7 @@ export default function ContactSection() {
           >
             
 
-            <h2 className="text-2xl lg:text-5xl font-medium text-[#222]  mb-8">
+            <h2 className="text-2xl lg:text-5xl font-regular text-[#222]  mb-8">
               Reach out &
 Connect with Us
             </h2>
@@ -23,7 +23,7 @@ Connect with Us
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-[#222]">
   <div>
-    <h3 className="text-lg font-medium mb-2">Address</h3>
+    <h3 className="text-lg font-regular mb-2">Address</h3>
     <p className="text-gray-800">
       Main GT Road,
       <br />
@@ -32,7 +32,7 @@ Connect with Us
   </div>
 
   <div>
-    <h3 className="text-lg font-medium mb-2">Phone</h3>
+    <h3 className="text-lg font-regular mb-2">Phone</h3>
     <a
       href="tel:+923001234567"
       className="text-gray-800 hover:text-[#000] transition"
@@ -57,7 +57,7 @@ Connect with Us
                 href="https://www.google.com/maps?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPOTM2NjE5NzQzMzkyNDU5AAGnGjcr9kbStGlywp6MOOehCuHcY2CP9P8toylqe9KJcXDQUnJaUEvaxAA6_qQ_aem_mEaTXWcA9LD6xnEKD0DRgg"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block mt-4 text-[#000] font-medium hover:underline"
+                className="inline-block mt-4 text-[#000] font-regular hover:underline"
               >
                 Open in Google Maps →
               </a>
@@ -69,7 +69,7 @@ Connect with Us
             className="p-8 md:p-12 lg:p-16"
           > 
 
-            <h2 className="text-2xl lg:text-5xl font-medium text-[#222] leading-tight mb-10">
+            <h2 className="text-2xl lg:text-5xl font-regular text-[#222] leading-tight mb-10">
               Contact Us
             </h2>
 

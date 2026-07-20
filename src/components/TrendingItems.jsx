@@ -6,6 +6,11 @@ import Kitchen from "../assets/images/collection.webp";
 import decor from "../assets/images/collection2.webp";
 import Lappato from "../assets/images/Lappato.webp";
 import appolo from "../assets/images/oppolo2.jpg";
+import Vanities from "../assets/images/vanities.webp";
+import Slabs from "../assets/images/slabs.jpg";
+
+
+
 const products = [
   {
     image: bathroom1,
@@ -18,6 +23,14 @@ const products = [
   {
     image: appolo,
     title: "Appolo",
+  },
+  {
+    image: Vanities,
+    title: "vanities",
+  },
+  {
+    image: Slabs,
+    title: "Slabs",
   },
   {
     image: PrivateWellness,
@@ -40,8 +53,8 @@ export default function TrendingItems() {
   const y = useTransform(scrollYProgress, [0, 1], [0, -120]);
 
   return (
-    <section className="pt-28 bg-[#EFECE8] overflow-hidden">
-      <div className="max-w-7xl mx-auto px-5 lg:px-8">
+    <section className="pt-12 bg-[#EFECE8] overflow-hidden">
+      <div className="max-w-8xl mx-auto px-5 lg:px-8">
         {/* Heading */}
         <div className="text-center mb-20">
           
@@ -51,7 +64,7 @@ export default function TrendingItems() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
-            className="text-4xl lg:text-5xl font-medium text-[#222]"
+            className="text-4xl lg:text-5xl font-regular text-[#222]"
           >
             Explore Our Collections
           </motion.h2>
@@ -60,7 +73,7 @@ export default function TrendingItems() {
         {/* Products Grid */}
         <motion.div
           style={{ y }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 cursor-pointer"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 cursor-pointer"
         >
           {products.map((item, index) => (
             <motion.div
