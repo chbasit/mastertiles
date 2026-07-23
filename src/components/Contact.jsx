@@ -2,7 +2,7 @@
 export default function ContactSection() {
   return (
     <section id="contact" className="bg-[#EFECE8] pb-8">
-      <div className="max-w-[1450px] mx-auto ">
+      <div className="max-w-[1400px] mx-auto ">
         <div className="grid lg:grid-cols-2 overflow-hidden ">
           {/* Left Contact Info */}
           <div

@@ -8,19 +8,22 @@ import Categoty from "./components/Category";
 import ShowroomSection from "./components/ShowroomSection";
 import Testimonials from "./components/Testimonial";
 import Faqs from "./components/Faqs";
-import VideoSection from "./components/Video";
+import WhyMaster from "./components/WhyMaster"
+// import VideoSection from "./components/Video";
 function App() {
   return (
     <div className="overflow-x-hidden">
       <Navbar />
       <HeroSection />
-      <Categoty />
       <TrendingItems />
+      <WhyMaster/>
+      {/* <Categoty /> */}
+
 <ShowroomSection />
       
 
       <SurfaceCollections />
-      <VideoSection />
+      {/* <VideoSection /> */}
       <Testimonials />
       <Faqs />
       <ContactForm />

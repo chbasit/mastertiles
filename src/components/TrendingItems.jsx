@@ -53,8 +53,8 @@ export default function TrendingItems() {
   const y = useTransform(scrollYProgress, [0, 1], [0, -120]);
 
   return (
-    <section className="pt-12 bg-[#EFECE8] overflow-hidden">
-      <div className="max-w-8xl mx-auto px-5 lg:px-8">
+    <section className="py-24 bg-[#EFECE8] overflow-hidden">
+      <div className="max-w-[1400px] mx-auto px-5 lg:px-8">
         {/* Heading */}
         <div className="text-center mb-20">
           
@@ -73,7 +73,7 @@ export default function TrendingItems() {
         {/* Products Grid */}
         <motion.div
           style={{ y }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 cursor-pointer"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 cursor-pointer"
         >
           {products.map((item, index) => (
             <motion.div
@@ -88,7 +88,7 @@ export default function TrendingItems() {
                   <img
                     src={item.image}
                     alt={item.title}
-                    className="w-full h-[400px] rounded-lg object-cover transition-transform duration-700 group-hover:scale-110"
+                    className="w-full h-[400px] rounded-sm object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                 </div>
 

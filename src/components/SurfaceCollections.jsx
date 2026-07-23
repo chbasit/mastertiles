@@ -49,7 +49,7 @@ const fadeUp = {
 export default function SurfaceCollections() {
   return (
   <section className="bg-[#212121] py-16 overflow-hidden">
-  <div className="max-w-[1450px] mx-auto px-5 lg:px-8">
+  <div className="max-w-[1400px] mx-auto px-5 lg:px-8">
     <div className="grid grid-cols-1 lg:grid-cols-4 gap-5 items-start">
 
       {/* Column 1 */}

@@ -9,8 +9,8 @@ import logo from "../assets/images/logo.jpg";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#FCFBFA] text-[#332820]">
-      <div className="max-w-[1450px] mx-auto px-6 lg:px-8">
+    <footer className="bg-[#EFECE8] text-[#332820]">
+      <div className="max-w-[1400px] mx-auto px-6 lg:px-8">
 
         {/* Top Line */}
         <div className="border-t border-gray-200 mb-16"></div>

@@ -22,10 +22,7 @@ const gallery = [
     image: img3,
     name: "Travertine Tiles",
   },
-  {
-    image: img4,
-    name: "Natural Stone Tiles",
-  },
+   
   {
     image: img5,
     name: "Marble Tiles",
@@ -34,10 +31,7 @@ const gallery = [
     image: img6,
     name: "Granite Design Tiles",
   },
-  {
-    image: img7,
-    name: "Decor Tiles",
-  },
+   
   {
     image: img8,
     name: "Slabs",
@@ -46,8 +40,8 @@ const gallery = [
 
 export default function ShowroomSection() {
   return (
-    <section className="py-8 bg-[#EFECE8]">
-      <div className="max-w-[1450px] mx-auto px-5 lg:px-8">
+    <section className="py-24 bg-[#EFECE8]">
+      <div className="max-w-[1400px] mx-auto px-5 lg:px-8">
 
         {/* Top Content */}
         <div className="grid lg:grid-cols-12 gap-12">
@@ -95,7 +89,7 @@ export default function ShowroomSection() {
         </div>
 
        <div className="mt-24">
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+  <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-4">
     {gallery.map((item, index) => (
       <motion.div
         key={index}

@@ -10,8 +10,13 @@ import {
 const navLinks = [
   { name: "Home", href: "#" },
   { name: "Tiles", href: "#tiles" },
-  { name: "Sanitary", href: "#sanitary" },
-  { name: "Kitchen", href: "#kitchen" },
+  // { name: "Sanitary", href: "#sanitary" },
+  { name: "Bathroom Fittings", href: "#Bathroomfittings" },
+  { name: "Vanities", href: "#Vanities" },
+
+  { name: "Sanitary Ware", href: "#Sanitaryware" },
+
+
   { name: "About", href: "#about" },
    { name: "Contact Us", href: "#contact" },
 ];
@@ -40,7 +45,7 @@ export default function Navbar() {
           : "bg-transparent"
       }`}
     >
-      <nav className="max-w-[1450px] mx-auto px-6 lg:px-8">
+      <nav className="max-w-[1500px] mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
 
           {/* Logo */}

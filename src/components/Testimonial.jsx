@@ -66,7 +66,7 @@ const Card = ({ item }) => (
       ))}
     </div>
 
-    <p className="text-gray-800 text-sm line-clamp-5 pt-8">
+    <p className="text-gray-800 text-md line-clamp-5 pt-8">
       {item.review}
     </p>
   </div>
@@ -74,8 +74,8 @@ const Card = ({ item }) => (
 
 export default function Testimonials() {
   return (
-    <section className="pb-4 bg-[#EFECE8]">
-      <div className="max-w-[1450px] mx-auto px-5">
+    <section className="py-20 bg-[#EFECE8]">
+      <div className="max-w-[1400px] mx-auto px-5">
         {/* Heading */}
         <div className="text-center mb-10">
           <div className="flex justify-center items-center gap-3 mb-5">
