@@ -1,7 +1,7 @@
 
 export default function ContactSection() {
   return (
-    <section id="contact" className="bg-[#EFECE8] pb-8">
+    <section id="contact" className="bg-[#F4F4F4] pb-8">
       <div className="max-w-[1400px] mx-auto ">
         <div className="grid lg:grid-cols-2 overflow-hidden ">
           {/* Left Contact Info */}
@@ -17,38 +17,17 @@ Connect with Us
             </h2>
 
             <p className="text-gray-800 text-md mb-10 max-w-md">
-              Visit our showroom to explore premium tiles, luxury sanitary ware,
+              Visit our showroom at  Main GT Road, Gujranwala to explore premium tiles, luxury sanitary ware,
               and modern kitchen solutions crafted to elevate every space.
             </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-[#222]">
-  <div>
-    <h3 className="text-lg font-regular mb-2">Address</h3>
-    <p className="text-gray-800">
-      Main GT Road,
-      <br />
-      Gujranwala, Pakistan
-    </p>
-  </div>
+       
 
-  <div>
-    <h3 className="text-lg font-regular mb-2">Phone</h3>
-    <a
-      href="tel:+923001234567"
-      className="text-gray-800 hover:text-[#000] transition"
-    >
-      +92 300 1234567
-    </a>
-  </div>
-
- 
-</div>
-
-            <div className="mt-auto pt-10">
+            <div className="mt-auto ">
               <iframe
                 title="Google Map"
                 src="https://maps.google.com/maps?q=Main%20GT%20Road%20Gujranwala%20Pakistan&t=&z=15&ie=UTF8&iwloc=&output=embed"
-                className="w-full h-[300px] rounded-2xl border-0"
+                className="w-full h-[420px] rounded-2xl border-0"
                 loading="lazy"
                 allowFullScreen
               ></iframe>

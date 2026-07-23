@@ -48,7 +48,7 @@ const fadeUp = {
 
 export default function SurfaceCollections() {
   return (
-  <section className="bg-[#212121] py-16 overflow-hidden">
+  <section className="bg-white py-16 overflow-hidden">
   <div className="max-w-[1400px] mx-auto px-5 lg:px-8">
     <div className="grid grid-cols-1 lg:grid-cols-4 gap-5 items-start">
 
@@ -62,7 +62,7 @@ export default function SurfaceCollections() {
   custom={0}
   className="min-h-[140px] h-auto lg:h-[290px] flex items-center justify-center py-8 lg:py-0"
 >
-  <h2 className="text-[#fff] text-3xl md:text-5xl font-semibold text-center">
+  <h2 className="text-[#212121] text-3xl md:text-5xl font-semibold text-center">
     Something out of everything
   </h2>
 </motion.div>

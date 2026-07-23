@@ -44,7 +44,7 @@ const testimonials = [
 ];
 
 const Card = ({ item }) => (
-  <div className="h-[300px] border border-gray-200 bg-[#FCFBFA] p-6  flex flex-col">
+  <div className="h-[300px] border border-gray-200 bg-[#fff] p-6  flex flex-col">
     <div className="flex items-center gap-3 mb-4">
        
 
@@ -74,7 +74,7 @@ const Card = ({ item }) => (
 
 export default function Testimonials() {
   return (
-    <section className="py-20 bg-[#EFECE8]">
+    <section className="py-20 bg-[#F4F4F4]">
       <div className="max-w-[1400px] mx-auto px-5">
         {/* Heading */}
         <div className="text-center mb-10">
@@ -137,7 +137,7 @@ export default function Testimonials() {
               slidesPerView: 3,
             },
             1280: {
-              slidesPerView: 4,
+              slidesPerView: 5,
             },
           }}
         >

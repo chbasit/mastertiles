@@ -38,7 +38,7 @@ const collections = [
 
 export default function CollectionShowcase() {
   return (
-    <section className="py-4  bg-gray">
+    <section className="py-16  bg-[#F4F4F4]">
       <div className="max-w-8xl mx-auto px-5 lg:px-12">
         
 

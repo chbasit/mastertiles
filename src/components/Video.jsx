@@ -1,57 +1,69 @@
-import { motion } from "framer-motion";
+import { useRef } from "react";
+import { ArrowRight } from "lucide-react";
 import tilesVideo from "../assets/images/tiles.mp4";
 
 export default function TilesShowcase() {
+  const videoRef = useRef(null);
+
   return (
-    <section className="py-12 bg-[#EFECE8]">
+    <section className="py-20 bg-[#fff]">
       <div className="max-w-[1400px] mx-auto px-5 lg:px-8">
-        {/* Heading */}
-        <div className="text-center max-w-3xl mx-auto mb-14">
-          
+        <div className="grid lg:grid-cols-2 gap-14 items-center">
+          {/* Left Content */}
+          <div>
+            
 
-          <motion.h2
-            initial={{ opacity: 0, y: 35 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.1, duration: 0.6 }}
-            className="text-4xl md:text-5xl font-regular  text-[#222]  "
-          >
-            Discover the Beauty of Premium Tiles
-          </motion.h2>
+            <h2 className="mt-5 text-3xl md:text-5xl  font-regular leading-[1.15] text-[#222]">
+              See Quality
+               
+              Built
+              <br/> Into
+              
+              Every Detail
+            </h2>
 
-          <motion.p
-            initial={{ opacity: 0, y: 35 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.2, duration: 0.6 }}
-            className="mt-6 text-gray-800 text-sm md:text-lg"
+            <p className="mt-8 text-gray-800 text-md  max-w-xl">
+              Experience the craftsmanship behind every MasterOne collection.
+              From premium porcelain tiles and ceramic surfaces to sanitary ware
+              and modern interior solutions, every product is created with
+              attention to quality, durability, and timeless design for homes
+              and commercial spaces.
+            </p>
+
+            <p className="mt-5 text-gray-800 text-md  max-w-xl">
+              Discover materials designed to inspire beautiful interiors while
+              delivering the performance needed for everyday living.
+            </p>
+
+            <a
+              href="#collections"
+              className="inline-flex items-center gap-3 mt-10 border border-[#222] text-[#222] px-7 py-4 rounded-full hover:bg-[#222] hover:text-white transition-all duration-300"
+            >
+              Explore Collection
+              <ArrowRight size={18} />
+            </a>
+          </div>
+
+          {/* Right Video */}
+          <div
+            
+            className="overflow-hidden rounded-2xl"
           >
-            Crafted with precision and designed for modern living, our premium
-            porcelain slabs and ceramic tiles bring elegance, durability, and
-            timeless style to every residential and commercial space.
-          </motion.p>
+            <video
+              ref={videoRef}
+              className="w-full h-[300px] md:h-[350px] lg:h-[400px] object-cover"
+              autoPlay
+              muted
+              loop
+              playsInline
+              controls={false}
+              onMouseEnter={() => videoRef.current?.pause()}
+              onMouseLeave={() => videoRef.current?.play()}
+            >
+              <source src={tilesVideo} type="video/mp4" />
+            </video>
+          </div>
         </div>
-
-        {/* Video */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.96 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.7 }}
-          className="overflow-hidden "
-        >
-          <video
-            className="w-full h-[300px] md:h-[500px] lg:h-[700px] object-cover"
-            autoPlay
-            muted
-            loop
-            playsInline
-            controls={false}
-          >
-            <source src={tilesVideo} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        </motion.div>
       </div>
     </section>
   );

@@ -60,11 +60,11 @@ export default function Navbar() {
 
             <div className="hidden sm:block">
               <h2
-                className={`font-bold text-xl tracking-wide transition-colors duration-300 ${
+                className={`font-regular text-lg tracking-wide transition-colors duration-300 ${
                   scrolled ? "text-[#36454F]" : "text-white"
                 }`}
               >
-                MasterOne (M1)
+                MasterOne
               </h2>
 
               <p

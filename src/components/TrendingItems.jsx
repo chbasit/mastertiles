@@ -53,7 +53,7 @@ export default function TrendingItems() {
   const y = useTransform(scrollYProgress, [0, 1], [0, -120]);
 
   return (
-    <section className="py-24 bg-[#EFECE8] overflow-hidden">
+    <section className="py-16 bg-[#F4F4F4] overflow-hidden">
       <div className="max-w-[1400px] mx-auto px-5 lg:px-8">
         {/* Heading */}
         <div className="text-center mb-20">
@@ -88,7 +88,7 @@ export default function TrendingItems() {
                   <img
                     src={item.image}
                     alt={item.title}
-                    className="w-full h-[400px] rounded-sm object-cover transition-transform duration-700 group-hover:scale-110"
+                    className="w-full h-[350px] rounded-sm object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                 </div>
 

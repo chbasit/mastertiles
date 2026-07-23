@@ -15,7 +15,7 @@ const slides = [
   },
   {
     image: wallTiles,
-    title: "Luxury Wall & Floor Tile Collections",
+    title: "Luxury Wall & Floor Tile Collections in Gujranwala, Pakistan",
     description:
       "Explore premium ceramic and porcelain tiles that combine timeless elegance with modern craftsmanship for residential and commercial interiors.",
   },

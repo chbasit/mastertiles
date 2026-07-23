@@ -9,7 +9,7 @@ import ShowroomSection from "./components/ShowroomSection";
 import Testimonials from "./components/Testimonial";
 import Faqs from "./components/Faqs";
 import WhyMaster from "./components/WhyMaster"
-// import VideoSection from "./components/Video";
+import VideoSection from "./components/Video";
 function App() {
   return (
     <div className="overflow-x-hidden">
@@ -23,7 +23,7 @@ function App() {
       
 
       <SurfaceCollections />
-      {/* <VideoSection /> */}
+      <VideoSection />
       <Testimonials />
       <Faqs />
       <ContactForm />

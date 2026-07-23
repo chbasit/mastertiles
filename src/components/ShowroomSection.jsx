@@ -40,53 +40,38 @@ const gallery = [
 
 export default function ShowroomSection() {
   return (
-    <section className="py-24 bg-[#EFECE8]">
+    <section className="py-16 bg-[#F4F4F4]">
       <div className="max-w-[1400px] mx-auto px-5 lg:px-8">
 
-        {/* Top Content */}
-        <div className="grid lg:grid-cols-12 gap-12">
+    {/* Heading & Description */}
+<div className="max-w-5xl mx-auto text-center mb-20">
+  <motion.h2
+    initial={{ opacity: 0, y: 30 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true }}
+    transition={{ duration: 0.6 }}
+    className="text-3xl md:text-5xl leading-[1.15] text-[#222]"
+  >
+    Premium Porcelain & Ceramic
+    <br />
+    Tile Collections
+  </motion.h2>
 
-          {/* Left */}
-          <motion.div
-            initial={{ opacity: 0, x: -40 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.7 }}
-            className="lg:col-span-4"
-          >
-            <h2 className="text-2xl lg:text-5xl font-regular   text-[#222]">
-              No 1. Porcelain Tiles & Ceramics Tiles Company in Pakistan
-            </h2>
-          
-          </motion.div>
-
-          {/* Right */}
-          <motion.div
-            initial={{ opacity: 0, x: 40 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.7 }}
-            className="lg:col-span-8"
-          >
-            <div className="space-y-8 text-lg  text-gray-800">
-              <p>
-                Welcome to  M1 Store your destination for
-                luxury tiles, sanitary ware, and premium interior solutions.
-                Our showroom is designed to inspire homeowners, architects,
-                interior designers, and builders with elegant products that
-                combine style, durability, and quality.
-              </p>
-
-              <p>
-                Located on Kashmir Road, Habib Mall Plaza, Sialkot, our showroom
-                lets you experience materials firsthand before making the
-                perfect choice for your home or commercial project.
-              </p>
-
-               
-            </div>
-          </motion.div>
-        </div>
+  <motion.p
+    initial={{ opacity: 0, y: 30 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true }}
+    transition={{ delay: 0.15, duration: 0.6 }}
+    className="mt-8 max-w-3xl mx-auto text-gray-800 text-md"
+  >
+    At <span className="font-medium">MasterOne (M1)</span>, we offer a
+    carefully curated selection of premium porcelain tiles, ceramic tiles,
+    marble finishes, decorative surfaces, and modern interior solutions.
+    Every collection is chosen to deliver exceptional quality, timeless
+    aesthetics, and long-lasting performance for residential and commercial
+    spaces.
+  </motion.p>
+</div>
 
        <div className="mt-24">
   <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-4">

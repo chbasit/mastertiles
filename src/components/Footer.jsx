@@ -9,7 +9,7 @@ import logo from "../assets/images/logo.jpg";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#EFECE8] text-[#332820]">
+    <footer className="bg-[#343437] text-[#fff]">
       <div className="max-w-[1400px] mx-auto px-6 lg:px-8">
 
         {/* Top Line */}
@@ -31,13 +31,13 @@ export default function Footer() {
                   MasterOne (M1)
                 </h2>
 
-                <p className="text-sm text-gray-500">
+                <p className="text-sm text-white">
                   m1tiles.pk
                 </p>
               </div>
             </div>
 
-            <p className="leading-8 text-gray-800">
+            <p className="leading-8 text-white">
               MasterOne (M1) offers premium ceramic tiles,
               porcelain tiles, sanitary ware, kitchen solutions,
               and luxury interior finishes designed to elevate
@@ -52,28 +52,28 @@ export default function Footer() {
               Products
             </h3>
 
-            <ul className="space-y-4 text-gray-800">
-              <li className="hover:text-[#36454F] cursor-pointer transition">
+            <ul className="space-y-4 text-white">
+              <li className="hover:text-[#e8ebec] cursor-pointer transition">
                 Wall Tiles
               </li>
 
-              <li className="hover:text-[#36454F] cursor-pointer transition">
+              <li className="hover:text-[#e8ebec] cursor-pointer transition">
                 Floor Tiles
               </li>
 
-              <li className="hover:text-[#36454F] cursor-pointer transition">
+              <li className="hover:text-[#e8ebec] cursor-pointer transition">
                 Porcelain Tiles
               </li>
 
-              <li className="hover:text-[#36454F] cursor-pointer transition">
+              <li className="hover:text-[#e8ebec] cursor-pointer transition">
                 Kitchen Collection
               </li>
 
-              <li className="hover:text-[#36454F] cursor-pointer transition">
+              <li className="hover:text-[#e8ebec] cursor-pointer transition">
                 Sanitary Ware
               </li>
 
-              <li className="hover:text-[#36454F] cursor-pointer transition">
+              <li className="hover:text-[#e8ebec] cursor-pointer transition">
                 Bathroom Accessories
               </li>
             </ul>
@@ -85,28 +85,28 @@ export default function Footer() {
               Quick Links
             </h3>
 
-            <ul className="space-y-4 text-gray-800">
-              <li className="hover:text-[#36454F] cursor-pointer transition">
+            <ul className="space-y-4 text-white">
+              <li className="hover:text-[#e8ebec] cursor-pointer transition">
                 Home
               </li>
 
-              <li className="hover:text-[#36454F] cursor-pointer transition">
+              <li className="hover:text-[#e8ebec] cursor-pointer transition">
                 About Us
               </li>
 
-              <li className="hover:text-[#36454F] cursor-pointer transition">
+              <li className="hover:text-[#e8ebec] cursor-pointer transition">
                 Collections
               </li>
 
-              <li className="hover:text-[#36454F] cursor-pointer transition">
+              <li className="hover:text-[#e8ebec] cursor-pointer transition">
                 Projects
               </li>
 
-              <li className="hover:text-[#36454F] cursor-pointer transition">
+              <li className="hover:text-[#e8ebec] cursor-pointer transition">
                 Gallery
               </li>
 
-              <li className="hover:text-[#36454F] cursor-pointer transition">
+              <li className="hover:text-[#e8ebec] cursor-pointer transition">
                 Contact Us
               </li>
             </ul>
@@ -118,7 +118,7 @@ export default function Footer() {
               Contact
             </h3>
 
-            <div className="space-y-5 text-gray-800">
+            <div className="space-y-5 text-white">
 
               <div className="flex items-start gap-3">
                 <MapPin size={18} className="mt-1 flex-shrink-0" />
@@ -181,14 +181,14 @@ export default function Footer() {
         {/* Footer Bottom */}
         <div className="py-8 flex flex-col md:flex-row items-center justify-between gap-4">
 
-          <p className="text-sm text-gray-500 text-center md:text-left">
+          <p className="text-sm text-white text-center md:text-left">
             © 2026 <span className="font-semibold">MasterOne (M1)</span>. All
             Rights Reserved.
           </p>
 
-          <p className="text-sm text-gray-500 text-center">
+          <p className="text-sm text-white text-center">
             Designed & Developed  for
-            <span className="font-semibold text-[#332820]">
+            <span className="font-semibold text-[#fff]">
               {" "}
               m1tiles.pk
             </span>
