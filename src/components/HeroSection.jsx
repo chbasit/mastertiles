@@ -9,13 +9,13 @@ import outdoorTiles from "../assets/images/outdoor.jpg";
 const slides = [
   {
     image: outdoorTiles,
-    title: "Premium Outdoor Tiles Designed for Every Space in Pakistan",
+    title: "Premium Outdoor Tiles for Every Space",
     description:
       "Enhance patios, terraces, gardens, and commercial spaces with durable porcelain outdoor tiles crafted for long-lasting beauty and performance.",
   },
   {
     image: wallTiles,
-    title: "Luxury Wall & Floor Tile Collections in Gujranwala, Pakistan",
+    title: "Floor Tile Collections in Gujranwala, Pakistan",
     description:
       "Explore premium ceramic and porcelain tiles that combine timeless elegance with modern craftsmanship for residential and commercial interiors.",
   },
