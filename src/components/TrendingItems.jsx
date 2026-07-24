@@ -102,8 +102,11 @@ export default function TrendingItems() {
 
                   
                 </div>
+                
               </div>
+              
             </motion.div>
+          
           ))}
         </motion.div>
       </div>
