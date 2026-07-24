@@ -94,7 +94,7 @@ export default function HeroSection() {
               exit={{ opacity: 0, y: -30 }}
               transition={{ duration: 0.7 }}
             >
-              <p className="text-white font-medium  md:text-lg leading-8 mb-8">
+              <p className="text-white font-medium  md:text-lg mb-8">
                 {slides[current].description}
               </p>
 
