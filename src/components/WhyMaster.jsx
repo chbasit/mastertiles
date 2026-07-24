@@ -111,7 +111,7 @@ export default function WhyMaster() {
 
           <a
             href="#collections"
-            className="inline-flex items-center gap-3 border border-[#222] px-7 py-4 rounded-full text-[#222] hover:bg-[#222] hover:text-white transition-all duration-300 w-fit"
+            className="inline-flex items-center gap-3 border border-[#222] px-7 py-3 bg-[#36454F] text-white hover:bg-white hover:text-black  transition-all duration-300 w-fit"
           >
             Explore Collections
             <ArrowRight size={18} />

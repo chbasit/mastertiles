@@ -17,7 +17,7 @@ function App() {
       <HeroSection />
       <TrendingItems />
       <WhyMaster/>
-      {/* <Categoty /> */}
+      <Categoty />
 
 <ShowroomSection />
       

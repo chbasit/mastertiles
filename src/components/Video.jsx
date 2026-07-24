@@ -37,7 +37,7 @@ export default function TilesShowcase() {
 
             <a
               href="#collections"
-              className="inline-flex items-center gap-3 mt-10 border border-[#222] text-[#222] px-7 py-4 rounded-full hover:bg-[#222] hover:text-white transition-all duration-300"
+              className="inline-flex items-center gap-3 mt-10 border border-[#222]  px-7 py-3 bg-[#36454F] text-white hover:bg-white hover:text-black transition-all duration-300"
             >
               Explore Collection
               <ArrowRight size={18} />

@@ -11,7 +11,7 @@ export default function ContactSection() {
           >
             
 
-            <h2 className="text-2xl lg:text-5xl font-regular text-[#222]  mb-8">
+            <h2 className="text-2xl lg:text-4xl font-regular text-[#222]  mb-8">
               Reach out &
 Connect with Us
             </h2>
@@ -48,7 +48,7 @@ Connect with Us
             className="p-8 md:p-12 lg:p-16"
           > 
 
-            <h2 className="text-2xl lg:text-5xl font-regular text-[#222] leading-tight mb-10">
+            <h2 className="text-2xl lg:text-4xl font-regular text-[#222] leading-tight mb-10">
               Contact Us
             </h2>
 
@@ -87,7 +87,7 @@ Connect with Us
 
               <button
                 type="submit"
-                className="w-full bg-black text-white py-4 rounded-lg font-semibold cursor-pointer transition duration-300"
+                className="w-full bg-[#36454F] text-white py-4 rounded-lg font-semibold cursor-pointer transition duration-300"
               >
                 Send Message
               </button>

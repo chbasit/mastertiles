@@ -94,13 +94,13 @@ export default function HeroSection() {
               exit={{ opacity: 0, y: -30 }}
               transition={{ duration: 0.7 }}
             >
-              <p className="text-white text-base md:text-lg leading-8 mb-8">
+              <p className="text-white font-medium  md:text-lg leading-8 mb-8">
                 {slides[current].description}
               </p>
 
               <a
                 href="#collections"
-                className="inline-flex items-center gap-3 border border-white  px-7 py-4 rounded-full bg-white text-black hover:bg-gray-200  transition-all duration-300"
+                className="inline-flex items-center gap-3 border border-white  px-7 py-3 bg-white text-black hover:bg-gray-200  transition-all duration-300"
               >
                 Explore Collection
                 <ArrowRight size={18} />

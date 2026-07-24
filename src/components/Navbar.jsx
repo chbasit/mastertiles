@@ -1,24 +1,16 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import { FaInstagram, FaFacebookF } from "react-icons/fa";
 import logo from "../assets/images/logo.jpg";
-import {
-  FaInstagram,
-  FaLinkedinIn,
-  FaFacebookF,
-} from "react-icons/fa";
 
 const navLinks = [
   { name: "Home", href: "#" },
   { name: "Tiles", href: "#tiles" },
-  // { name: "Sanitary", href: "#sanitary" },
   { name: "Bathroom Fittings", href: "#Bathroomfittings" },
   { name: "Vanities", href: "#Vanities" },
-
   { name: "Sanitary Ware", href: "#Sanitaryware" },
-
-
   { name: "About", href: "#about" },
-   { name: "Contact Us", href: "#contact" },
+  { name: "Contact Us", href: "#contact" },
 ];
 
 export default function Navbar() {
@@ -27,8 +19,8 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      // Change navbar after hero section
-      setScrolled(window.scrollY > window.innerHeight * 0.9);
+      // Change navbar immediately when scrolling starts
+      setScrolled(window.scrollY > 10);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -41,18 +33,28 @@ export default function Navbar() {
     <header
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
         scrolled
-          ? "bg-[#FCFBFA]  shadow-md border-b border-gray-200"
+          ? "bg-[#FCFBFA] shadow-md border-b border-gray-200"
           : "bg-transparent"
       }`}
     >
-      <nav className="max-w-[1500px] mx-auto px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+      {/* Top Announcement Bar */}
+      <div
+        className={`h-9 flex items-center justify-center text-center text-[11px] sm:text-sm tracking-wide transition-all duration-500 ${
+          scrolled
+            ? "bg-[#36454F] text-white"
+            : "bg-transparent text-white border-b border-white/20"
+        }`}
+      >
+        Pakistan's Top Rated Sanitary & Tiles Brand
+      </div>
 
+      <nav className="max-w-[1500px] mx-auto px-6 lg:px-8">
+        <div className="flex items-center justify-between h-[76px]">
           {/* Logo */}
           <a href="#" className="flex items-center gap-3">
             <img
               src={logo}
-              alt="Company Logo"
+              alt="MasterOne Logo"
               className={`w-14 h-14 rounded-full object-cover border-2 transition-all duration-300 ${
                 scrolled ? "border-gray-300" : "border-white"
               }`}
@@ -60,7 +62,7 @@ export default function Navbar() {
 
             <div className="hidden sm:block">
               <h2
-                className={`font-regular text-lg tracking-wide transition-colors duration-300 ${
+                className={`text-lg transition-colors duration-300 ${
                   scrolled ? "text-[#36454F]" : "text-white"
                 }`}
               >
@@ -69,7 +71,7 @@ export default function Navbar() {
 
               <p
                 className={`text-xs tracking-[3px] uppercase transition-colors duration-300 ${
-                  scrolled ? "text-gray-800" : "text-gray-200"
+                  scrolled ? "text-gray-700" : "text-gray-200"
                 }`}
               >
                 m1tiles
@@ -83,7 +85,7 @@ export default function Navbar() {
               <li key={link.name}>
                 <a
                   href={link.href}
-                  className={`font-regular transition duration-300 ${
+                  className={`transition duration-300 ${
                     scrolled
                       ? "text-[#36454F] hover:text-yellow-600"
                       : "text-white hover:text-yellow-400"
@@ -95,35 +97,35 @@ export default function Navbar() {
             ))}
           </ul>
 
-          {/* CTA */}
-         {/* Social Icons */}
-<div className="hidden lg:flex items-center gap-3">
-  <a
-    href="https://www.facebook.com/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className={`w-10 h-10   flex items-center justify-center transition duration-300 ${
-      scrolled
-        ? "  text-[#36454F] hover:bg-[#36454F] hover:text-white"
-        : "  text-white hover:bg-white hover:text-[#36454F]"
-    }`}
-  >
-    <FaFacebookF size={16} />
-  </a>
+          {/* Desktop Social Icons */}
+          <div className="hidden lg:flex items-center gap-3">
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`w-10 h-10 rounded-full border flex items-center justify-center transition duration-300 ${
+                scrolled
+                  ? "border-gray-300 text-[#36454F] hover:bg-[#36454F] hover:text-white"
+                  : "border-white text-white hover:bg-white hover:text-[#36454F]"
+              }`}
+            >
+              <FaFacebookF size={16} />
+            </a>
 
-  <a
-    href="https://www.instagram.com/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className={`w-10 h-10  flex items-center justify-center transition duration-300 ${
-      scrolled
-        ? "  text-[#36454F] hover:bg-[#36454F] hover:text-white"
-        : "  text-white hover:bg-white hover:text-[#36454F]"
-    }`}
-  >
-    <FaInstagram size={17} />
-  </a>
-</div>
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`w-10 h-10 rounded-full border flex items-center justify-center transition duration-300 ${
+                scrolled
+                  ? "border-gray-300 text-[#36454F] hover:bg-[#36454F] hover:text-white"
+                  : "border-white text-white hover:bg-white hover:text-[#36454F]"
+              }`}
+            >
+              <FaInstagram size={17} />
+            </a>
+          </div>
+
           {/* Mobile Menu Button */}
           <button
             onClick={() => setMenuOpen(!menuOpen)}
@@ -138,7 +140,7 @@ export default function Navbar() {
         {/* Mobile Menu */}
         <div
           className={`lg:hidden overflow-hidden transition-all duration-300 ${
-            menuOpen ? "max-h-[500px]" : "max-h-0"
+            menuOpen ? "max-h-[600px]" : "max-h-0"
           }`}
         >
           <div
@@ -166,33 +168,34 @@ export default function Navbar() {
               ))}
             </ul>
 
-           <div className="flex items-center justify-center gap-4 mt-8">
-  <a
-    href="https://www.facebook.com/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className={`w-11 h-11 rounded-full border flex items-center justify-center transition ${
-      scrolled
-        ? "border-gray-300 text-[#36454F] hover:bg-[#36454F] hover:text-white"
-        : "border-white text-white hover:bg-white hover:text-[#36454F]"
-    }`}
-  >
-    <FaFacebookF size={18} />
-  </a>
+            {/* Mobile Social Icons */}
+            <div className="flex items-center justify-center gap-4 mt-8">
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`w-11 h-11 rounded-full border flex items-center justify-center transition ${
+                  scrolled
+                    ? "border-gray-300 text-[#36454F] hover:bg-[#36454F] hover:text-white"
+                    : "border-white text-white hover:bg-white hover:text-[#36454F]"
+                }`}
+              >
+                <FaFacebookF size={18} />
+              </a>
 
-  <a
-    href="https://www.instagram.com/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className={`w-11 h-11 rounded-full border flex items-center justify-center transition ${
-      scrolled
-        ? " text-[#36454F] hover:bg-[#36454F] hover:text-white"
-        : "  text-white hover:bg-white hover:text-[#36454F]"
-    }`}
-  >
-    <FaInstagram size={18} />
-  </a>
-</div>
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`w-11 h-11 rounded-full border flex items-center justify-center transition ${
+                  scrolled
+                    ? "border-gray-300 text-[#36454F] hover:bg-[#36454F] hover:text-white"
+                    : "border-white text-white hover:bg-white hover:text-[#36454F]"
+                }`}
+              >
+                <FaInstagram size={18} />
+              </a>
+            </div>
           </div>
         </div>
       </nav>

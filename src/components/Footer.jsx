@@ -1,7 +1,6 @@
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import {
   FaInstagram,
-  FaLinkedinIn,
   FaFacebookF,
 } from "react-icons/fa";
 
@@ -9,7 +8,7 @@ import logo from "../assets/images/logo.jpg";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#343437] text-[#fff]">
+    <footer className="bg-[#36454F] text-[#fff]">
       <div className="max-w-[1400px] mx-auto px-6 lg:px-8">
 
         {/* Top Line */}
@@ -164,12 +163,7 @@ export default function Footer() {
                 <FaInstagram />
               </a>
 
-              <a
-                href="#"
-                className="w-11 h-11 rounded-full border border-gray-300 flex items-center justify-center hover:bg-[#B9975B] hover:text-white hover:border-[#B9975B] transition-all duration-300"
-              >
-                <FaLinkedinIn />
-              </a>
+               
 
             </div>
           </div>
