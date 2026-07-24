@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X,Phone, } from "lucide-react";
 import { FaInstagram, FaFacebookF } from "react-icons/fa";
 import logo from "../assets/images/logo.jpg";
 
@@ -99,6 +99,13 @@ export default function Navbar() {
 
           {/* Desktop Social Icons */}
           <div className="hidden lg:flex items-center gap-3">
+             
+            
+            <p  className={` flex items-center justify-center transition duration-300 pr-4 ${
+                scrolled
+                  ? "border-gray-300 text-[#36454F] hover:bg-[#36454F] hover:text-white"
+                  : "border-white text-white "
+              }`}>+92 300 1234567</p>
             <a
               href="https://www.facebook.com/"
               target="_blank"
@@ -124,7 +131,11 @@ export default function Navbar() {
             >
               <FaInstagram size={17} />
             </a>
+           
+                         
           </div>
+            
+                          
 
           {/* Mobile Menu Button */}
           <button
@@ -170,6 +181,11 @@ export default function Navbar() {
 
             {/* Mobile Social Icons */}
             <div className="flex items-center justify-center gap-4 mt-8">
+                <p  className={` flex items-center justify-center transition duration-300 pr-4 ${
+                scrolled
+                  ? "border-gray-300 text-[#36454F] hover:bg-[#36454F] hover:text-white"
+                  : "border-white text-white "
+              }`}>+92 300 1234567</p>
               <a
                 href="https://www.facebook.com/"
                 target="_blank"
